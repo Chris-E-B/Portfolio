@@ -4,43 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <title>Portfolio Site</title>
 </head>
 <body>
-    <div class="top">
-        <heading>
-            <nav>
-                <div class="navbar">
-                    <a href="#about" id="about_button" class="nav_button">About</a>
-                    <a href="#portfolio" id="portfolio_button" class="nav_button">Portfolio</a>
-                    <a href="#contact" id="contact_button" class="nav_button">Contact</a>
+    <main>
+        <header>
+            <div id="nav_list">
+                <a id="about_link" class="link" href="#about_container">About</a>
+                <a id="resume_link" class="link" href="#resume_container">Resume</a>
+                <a id="portfolio_link" class="link" href="#portfolio_container">Portfolio</a>
+                <button id="contact_link" class="link" href="#contact_container">Contact</button>
+                <div id="contact_container">
+                    <div id="contact_card">
+                        <div id="contact_header">
+                            <div id="contact_title">
+                                Contact Me
+                            </div>
+                            <button id="times">
+                                &times;
+                            </button>
+                        </div>
+                        <div id="contact_body">
+                            <div id="contact_email">
+                                Email me here : <a href="mailto:chrisbwfh@gmail.com">chrisbwfh@gmail.com</a>
+                            </div>
+                            <div id="contact_phone">
+                                Text me here : <a href="tel:6062268995">1 (606)-226-8995</a>
+                            </div>
+                            <div id="contact_resume_download">
+                                Download my resume : <a href="resume.pdf" download>Resume</a>
+                            </div>
+                            <div id="contact_cover_letter">
+                                Download my cover letter : 
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </nav>
-        </heading>
-        <main>
-            <h1 class="heading_text">
-                Hi my name is
-                <a id="name" href="https://github.com/Chris-E-B">Chris Booth</a>
-            </h1>
-            <div id="resume_container">
-                Resume: <a href="Resume.pdf">Resume.pdf</a>
+                </div>
             </div>
-            <div id="cover_container">
-                Cover Letter: 
+        </header>
+        <div id="container">
+            <div id="about">
+                <h1 id="title">Hi, my name is Chris.</h1>
+                <div id="p1">I am a Front End Web Developer</div>
+                <div id="p2">building foundations for the web.</div>
+                <p id="p3">I am currently focused on increasing my knowledge<br>in algorithms and data structures.</br></p>
+                <a href="" id="button_portfolio">Check my portfolio here</a>
             </div>
-        </main>
-    </div>
-    <div id="about">
-        <h1 class="about_header">
-            About
-        </h1>
-    </div>
-    <div id="contact">
-        Doug
-    </div>
-    <div id="portfolio">
-        Hello
-    </div>
-    <script src="app.js"></script>
+            <div id="recent">
+                <h1 id="recent_title">Check out my recent project here</h1>
+                <div id="recent_container_project">
+                    <div id="recent_project">
+                    </div>
+                    <a href="" id="recent_code" class="recent_link">Code</a>
+                    <a href="" id="recent_live" class="recent_link">Live Preview</a>
+                </div>
+            </div>
+        </div>
+        <div id="resume_contain">
+            <a href="resume_container" id="resume_container">Hi</a>
+        </div>
+        <div id="portfolio_container">
+            Portfolio
+        </div>
+        <script src="app.js"></script>
+    </main>
 </body>
 </html>
