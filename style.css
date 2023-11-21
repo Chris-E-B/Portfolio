@@ -57,6 +57,48 @@ header {
     color: black;
 }
 
+.dropbtn {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+  
+.social {
+    margin-left: 45vw;
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+ 
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+  
+.social:hover .dropdown-content {
+    display: block;
+}
+  
+.social:hover .dropbtn {
+    background-color: var(--link_color);
+}
+  
+
 #contact_container {
     height: 100vh;
     width: 98.5vw;
@@ -172,7 +214,6 @@ header {
     width: 30vw;
     height: 20vw;
     margin-left: 3vw;
-    background-color: gray;
 }
 
 #recent_project {
@@ -182,11 +223,14 @@ header {
     background-color: white;
     margin-bottom: 2vh;
 }
+.recent_img {
+    width: 20vw;
+}
 
 .recent_link {
     color: black;
     text-decoration: none;
-    border: 1px solid black;
+    border: 1px solid var(--link_color);
     border-radius: 10px;
     padding: 4px;
 }
@@ -198,5 +242,35 @@ header {
 #resume_contain, #portfolio_container{
     height: 100vh;
     width: 98.5vw;
-    background-color: yellow;
+}
+
+#resume_container {
+    display: flex;
+}
+
+#skills {
+    width: 50vw;
+    height: 100vh;
+}
+
+#skills_header {
+    font-size: 20px;
+    margin-top: 20vh;
+    margin-left: 30%;
+}
+
+#skills_body {
+    margin-left: 20.5vw;
+}
+
+.line {
+    padding-top: 5px;
+}
+
+#certificates {
+    width: 50vw;
+}
+
+#header_resume {
+    margin-top: 20vh;
 }
