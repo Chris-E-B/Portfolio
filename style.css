@@ -12,6 +12,10 @@ body {
     margin: 0;
 }
 
+#burger {
+    visibility: hidden;
+}
+
 #nav_list {
     height: 10vh;
     display: inline;
@@ -274,3 +278,165 @@ header {
 #header_resume {
     margin-top: 20vh;
 }
+
+#portfolio_header {
+    margin-left: 45vw;
+    margin-top: 20vh;
+    font-size: 28px;
+}
+
+#portfolio_body_container {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.project {
+    background-color: #ddd;
+    margin: 10px;
+    height: 50%;
+    width: 35vw;
+    height: 50vh;
+}
+
+.project_heading {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.project_image {
+    height: 30vh;
+    width: 30vw;
+    margin-top: 20px;
+    background-color: blue;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-bottom: 10px;
+}
+
+.project_image_size {
+    height: 30vh;
+    width: 30vw;
+}
+
+.code_project {
+    margin-top: 10px;
+    margin-left: 35%;
+    border: 1px solid blue;
+    cursor: pointer;
+}
+
+.live_project, .code_project {
+    border: 1px solid blue;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+
+    #burger {
+        width: 100vw;
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        cursor: pointer;
+        font-size: 3em;
+        border: none;
+        display: inline;
+        visibility: visible;
+    }
+
+    #title {
+        margin-top: 1vh;
+    }
+
+    .social {
+        margin-left: 0;
+    }
+
+    #contact_link {
+        background-color: white;
+        border: none;
+        margin: 0;
+        padding: 0;
+        display: inline;
+        color: black;
+        width: 40vw;
+        margin-left: 32vw;
+        margin-top: 5vh;
+    }
+
+    .link {
+        margin-left: 33vw;
+        display: inline;
+        font-size: 2.5em;
+        margin-top: 5vh;
+
+    }
+
+    #about_link {
+        margin-left: 0;
+    }
+
+    #nav_list {
+        position: fixed;
+        visibility: hidden;
+        width: 100vw;
+        height: 84vh;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .social {
+        visibility: hidden;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    #recent {
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    #recent_img {
+        width: 70vw;
+        margin-left: 15vw;
+    }
+
+    #portfolio_body_container {
+        width: 80vw;
+        margin-left: 10vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project {
+        width: 80vw;
+    }
+
+    .project_image_size {
+        width: 80vw;
+    }
+
+    #bottom_project {
+        padding-bottom: 20vh;
+    }
+}
+
