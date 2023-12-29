@@ -1,5 +1,5 @@
 :root {
-    --link_color:rgb(124, 124, 244);
+    --link_color:rgb(72, 72, 97);
 }
 
 html {
@@ -42,6 +42,7 @@ header {
     border: 1px solid var(--link_color);
     transition: 500ms;
     color: var(--link_color);
+    border-radius: 10px;
 }
 
 #about_link {
@@ -339,6 +340,18 @@ header {
     border-radius: 10px;
 }
 
+#bad_project {
+    display: none;
+}
+
+#good_project {
+    display: none;
+}
+
+#ok_project {
+    display: none;
+}
+
 @media (max-width: 600px) {
 
     #burger {
@@ -407,6 +420,7 @@ header {
     #about {
         width: 100vw;
         height: 100vh;
+        margin-bottom: 20vh;
     }
 
     #recent {
